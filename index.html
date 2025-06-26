@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .all-container {
+            border: 10px solid grey;
+            width:60vw;
+            height: 100vh;
+            margin: 0px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 5px;
+        }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .first {
+            grid-row: span 2;
+        }
+
+        .third {
+            grid-row: span 2;
+        }
+
+        .fourth {
+            grid-row: span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all-container">
+        <img src="1.jpg" alt="" class="first">
+        <img src="2.jpg" alt="" class="second">
+        <img src="3.jpg" alt="" class="third">
+        <img src="4.jpg" alt="" class="fourth">
+        <img src="5.jpg" alt="" class="five">
+        <img src="6.jpg" alt="" class="six">
+    </div>
+</body>
+
+</html>
